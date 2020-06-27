@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrintActivity">
+
+    <TextView
+        android:id="@+id/transaksi_txt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/default_background"
+        android:gravity="center"
+        android:text="TRANSAKSI ANDA BERHASIL"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/black_background_button"
+        style="@style/AppTheme.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/black"
+        android:onClick="changeBackground"
+        android:text="@string/black_button"
+        app:layout_constraintEnd_toStartOf="@+id/red_background_button"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transaksi_txt" />
+
+    <Button
+        android:id="@+id/red_background_button"
+        style="@style/AppTheme.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/red_background"
+        android:onClick="changeBackground"
+        android:text="@string/red_button"
+        app:layout_constraintEnd_toStartOf="@+id/blue_background_button"
+        app:layout_constraintStart_toEndOf="@+id/black_background_button"
+        app:layout_constraintTop_toBottomOf="@+id/transaksi_txt" />
+
+    <Button
+        android:id="@+id/blue_background_button"
+        style="@style/AppTheme.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/blue_background"
+        android:onClick="changeBackground"
+        android:text="@string/blue_button"
+        app:layout_constraintEnd_toStartOf="@+id/green_background_button"
+        app:layout_constraintStart_toEndOf="@+id/red_background_button"
+        app:layout_constraintTop_toBottomOf="@+id/transaksi_txt" />
+
+    <Button
+        android:id="@+id/green_background_button"
+        style="@style/AppTheme.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/green_background"
+        android:onClick="changeBackground"
+        android:text="@string/green_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/blue_background_button"
+        app:layout_constraintTop_toBottomOf="@+id/transaksi_txt" />
+
+    <Button
+        android:id="@+id/resetbtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/reset"
+        android:onClick="reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_background_button" />
+
+    <Button
+        android:id="@+id/logbtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="75dp"
+        android:background="@drawable/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blue_background_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

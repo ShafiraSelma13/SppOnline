@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransferActivity">
+
+    <TextView
+        android:id="@+id/rekanda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/masukkan_nomer_rekening_anda"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/rekandaedit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rekanda" />
+
+    <TextView
+        android:id="@+id/pilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/pilih_kode_bank"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rekandaedit" />
+
+    <Spinner
+        android:id="@+id/kodespin"
+        android:layout_width="364dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:entries="@array/kode_bank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pilih" />
+
+    <TextView
+        android:id="@+id/rekpenerima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/masukkan_nomer_rekening"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kodespin" />
+
+    <EditText
+        android:id="@+id/rekpenerimaedit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rekpenerima" />
+
+    <TextView
+        android:id="@+id/jumtf"
+        android:layout_width="244dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/masukkan_jumlah_transfer"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rekpenerimaedit" />
+
+    <EditText
+        android:id="@+id/jumtfedit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jumtf" />
+
+    <Button
+        android:id="@+id/sendbtn"
+        android:layout_width="84dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/send"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jumtfedit" />
+
+    <Button
+        android:id="@+id/logtfbtn"
+        android:layout_width="84dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/logout"
+        app:layout_constraintStart_toEndOf="@+id/sendbtn"
+        app:layout_constraintTop_toBottomOf="@+id/jumtfedit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

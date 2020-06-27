@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">SppOnline</string>
+    <string name="action_profiles">action_profiles</string>
+    <string name="ummi_kulsum">Ummi Kulsum</string>
+    <string name="_201769040008">201769040008</string>
+    <string name="gmail_ummi1289_gmail_com">Gmail: ummi1289@gmail.com</string>
+    <string name="selma_karomi_shafira">Selma Karomi Shafira</string>
+    <string name="_201769040014">201769040014</string>
+    <string name="gmail_shafiraselma13_gmail_com">Gmail: shafiraselma13@gmail.com</string>
+    <string name="this_apps">This Apps</string>
+    <string name="copyright_spponline_2020">Copyright © SppOnline 2020</string>
+
+    <string name="nama">NAMA</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="jurusan">JURUSAN</string>
+    <string name="_jurusan">Jurusan</string>
+    <string name="nim">NIM</string>
+    <string name="_nim">Nim</string>
+    <string name="uang_pendaftaran">Uang Pendaftaran</string>
+    <string name="_uang_pendaftaran">Rp. </string>
+    <string name="biaya_pasopati">Biaya Pasopati</string>
+    <string name="_biaya_pasopati">Rp. </string>
+    <string name="biaya_pembangunan_dpp">Biaya Pembangunan Dpp</string>
+    <string name="_biaya_dpp">Rp. </string>
+    <string name="biaya_heregistrasi">Biaya Heregistrasi</string>
+    <string name="_biaya_heregistrasi">Rp. </string>
+    <string name="biaya_pendidikan_spp">Biaya Pendidikan Spp</string>
+    <string name="_biaya_spp">Rp. </string>
+    <string name="jumlah">JUMLAH :</string>
+
+    <string name="pilih_kode_bank">Pilih Kode Bank</string>
+    <string name="masukkan_nomer_rekening">Masukkan Nomor Rekening Penerima :</string>
+    <string name="masukkan_jumlah_transfer">Masukkan Jumlah Transfer :</string>
+    <string name="masukkan_nomer_rekening_anda">Masukkan Nomor Rekening Anda :</string>
+
+    <string name="link_icon_image">Link Icon/Image :</string>
+    <string name="https_www_flaticon_com">https://www.flaticon.com/</string>
+    <string name="https_icons8_com_icons">https://icons8.com/icons</string>
+    <string name="http_clipart_library_com">http://clipart-library.com/</string>
+
+    <string-array name="kode_bank">
+        <item>BANK BRI</item>
+        <item>008 - BANK MANDIRI</item>
+        <item>009 - BANK BNI</item>
+        <item>011 - BANK DANAMON</item>
+        <item>013 - BANK PERMATA</item>
+        <item>014 - BANK BCA</item>
+        <item>016 - BANK MAYBANK INDONESIA</item>
+        <item>019 - BANK PANIN</item>
+        <item>022 - BANK CIMB NIAGA</item>
+        <item>023 - BANK UOB INDONESIA</item>
+        <item>028 - BANK OCBC NISP</item>
+        <item>036 - BANK CCB INDONESIA</item>
+    </string-array>
+
+    <!-- Button label for blue button -->
+    <string name="blue_button">Blue</string>
+
+    <!-- Button label for green button -->
+    <string name="green_button">Green</string>
+
+    <!-- Button label for red button -->
+    <string name="red_button">Red</string>
+
+    <!-- Button label for black button -->
+    <string name="black_button">Black</string>
+
+    <!-- Default string for count textview -->
+    <string name="default_transaksi">0</string>
+
+    <!-- Button label for Reset button -->
+    <string name="reset_button">Reset</string>
+
+    <!-- Button label for Count button -->
+    <string name="count_button">Count</string>
+    <string name="naama">Nama</string>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.selmashaf.spponline">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/spp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DetailDataActivity"></activity>
+        <activity android:name=".EditActivity" />
+        <activity android:name=".ReadDataActivity" />
+        <activity
+            android:name=".PrintActivity"
+            android:label="Transaksi"
+            android:parentActivityName=".PrintActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.selmashaf.spponline.PrintActivity" />
+        </activity>
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".TransferActivity"
+            android:label="Transfer"
+            android:parentActivityName=".PembayaranActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.selmashaf.spponline.PembayaranActivity" />
+        </activity>
+        <activity
+            android:name=".PembayaranActivity"
+            android:label="Pembayaran"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.selmashaf.spponline.MainActivity" />
+        </activity>
+        <activity android:name=".ProfilesActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
