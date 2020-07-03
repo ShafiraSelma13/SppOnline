@@ -74,5 +74,7 @@
     <!-- Button label for Count button -->
     <string name="count_button">Count</string>
     <string name="naama">Nama</string>
+    <string name="alarm_off">Alarm Off</string>
+    <string name="alarm_on">Alarm On</string>
 
 </resources>
