@@ -37,16 +37,13 @@ public class PrintActivity extends AppCompatActivity {
             "com.selmashaf.spponline";
 
     private Button btnLogout;
-    private Button btnReset;
+
     private NotificationManager mNotifyManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_print);
-
-        createNotificationChannel();
-
 
         mPreferences = getSharedPreferences(
                 sharedPrefFile, MODE_PRIVATE);
@@ -56,14 +53,6 @@ public class PrintActivity extends AppCompatActivity {
         mShowTextView.setBackgroundColor(mColor);
 
         btnLogout = findViewById(R.id.logbtn);
-
-        btnReset = findViewById(R.id.resetbtn);
-        btnReset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                sendNotification();
-            }
-        });
 
         //Memberikan action pada button logout
         btnLogout.setOnClickListener(new View.OnClickListener() {
@@ -96,40 +85,6 @@ public class PrintActivity extends AppCompatActivity {
         int color = ((ColorDrawable) view.getBackground()).getColor();
         mShowTextView.setBackgroundColor(color);
         mColor = color;
-    }
-
-    public void sendNotification() {
-
-        NotificationCompat.Builder notifyBuilder = getNotificationBuilder();
-        mNotifyManager.notify(NOTIFICATION_ID, notifyBuilder.build());
-    }
-
-    public void createNotificationChannel() {
-        mNotifyManager = (NotificationManager)
-                getSystemService(NOTIFICATION_SERVICE);
-        if (android.os.Build.VERSION.SDK_INT >=
-                android.os.Build.VERSION_CODES.O) {
-            // Create a NotificationChannel
-            NotificationChannel notificationChannel = new NotificationChannel(PRIMARY_CHANNEL_ID,
-                    "Mascot Notification", NotificationManager
-                    .IMPORTANCE_HIGH);
-            notificationChannel.enableLights(true);
-            notificationChannel.setLightColor(Color.RED);
-            notificationChannel.enableVibration(true);
-            notificationChannel.setDescription("Notification from Mascot");
-            mNotifyManager.createNotificationChannel(notificationChannel);
-        }
-    }
-
-    private NotificationCompat.Builder getNotificationBuilder() {
-        NotificationCompat.Builder notifyBuilder = new NotificationCompat.Builder(this, PRIMARY_CHANNEL_ID)
-                .setContentTitle("Notif!")
-                .setContentText("Your background successfully removed")
-                .setSmallIcon(R.drawable.spp);
-
-        Toast.makeText(this, "Reset Background", Toast.LENGTH_SHORT).show();
-
-        return notifyBuilder;
     }
 
     public void reset(View view){

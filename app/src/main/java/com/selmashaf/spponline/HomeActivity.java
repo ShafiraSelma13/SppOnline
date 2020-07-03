@@ -121,18 +121,14 @@ public class HomeActivity extends AppCompatActivity {
 
             // Create the NotificationChannel with all the parameters.
             NotificationChannel notificationChannel = new NotificationChannel
-                    (PRIMARY_CHANNEL_ID,
-                            "SppOnline Notification",
-                            NotificationManager.IMPORTANCE_HIGH);
+                    (PRIMARY_CHANNEL_ID, "SppOnline Notification", NotificationManager.IMPORTANCE_HIGH);
 
             notificationChannel.enableLights(true);
             notificationChannel.setLightColor(Color.RED);
             notificationChannel.enableVibration(true);
-            notificationChannel.setDescription("Notifies every 15 minutes to " +
-                    "You must pay!");
+            notificationChannel.setDescription("Notifies every 15 minutes to " + "You must pay!");
             mNotificationManager.createNotificationChannel(notificationChannel);
         }
-
 
         btnExit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {

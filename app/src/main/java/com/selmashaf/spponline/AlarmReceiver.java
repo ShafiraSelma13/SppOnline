@@ -20,7 +20,7 @@ public class AlarmReceiver extends BroadcastReceiver {
      * Called when the BroadcastReceiver receives an Intent broadcast.
      *
      * @param context The Context in which the receiver is running.
-     * @param intent The Intent being received.
+     * @param intent  The Intent being received.
      */
     @Override
     public void onReceive(Context context, Intent intent) {
